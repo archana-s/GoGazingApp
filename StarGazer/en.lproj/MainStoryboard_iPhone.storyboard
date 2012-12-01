@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11E2068" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qAY-Gp-ppb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - How was it?-->
+        <scene sceneID="aDh-8u-rdq">
+            <objects>
+                <viewController id="01x-fe-V2W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ByK-63-Tb6">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="How was it?" id="AS6-Gh-TqJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XG4-Up-Q8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="766"/>
+        </scene>
+        <!--Where To Gaze View Controller - Where to gaze-->
+        <scene sceneID="P3x-Ai-6fD">
+            <objects>
+                <viewController id="URg-Tv-3Mh" customClass="WhereToGazeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="579-EY-1gI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="UTn-iY-8N6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Where to gaze" id="PIR-zF-dZf"/>
+                    <connections>
+                        <outlet property="weblink" destination="UTn-iY-8N6" id="f7G-L7-dlv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WX-9P-vth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-1724"/>
+        </scene>
+        <!--Gazing Table View Controller - Gaze News-->
+        <scene sceneID="Icv-87-je4">
+            <objects>
+                <tableViewController restorationIdentifier="Tweets Page" id="yn4-Q2-WZb" customClass="GazingTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZYU-nU-gWO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Gazing Tweets" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Gazing Tweets" rowHeight="64" id="3Jb-TK-sHL">
+                                <rect key="frame" x="0.0" y="22" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yn4-Q2-WZb" id="KGC-HT-GC9"/>
+                            <outlet property="delegate" destination="yn4-Q2-WZb" id="9aI-CU-KOA"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Gaze News" id="oeh-bc-Pfo"/>
+                    <navigationItem key="navigationItem" id="jRr-8C-eZ9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XzU-hx-bhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-633"/>
+        </scene>
+        <!--Gaze News View Controller - Item 1-->
+        <scene sceneID="zJh-rb-qHV">
+            <objects>
+                <viewController id="dVG-0T-4LD" customClass="GazeNewsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLZ-ee-jD2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4k-cS-XJH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="lTl-tM-8Qv"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="T4k-cS-XJH" id="Lkw-zV-5vq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WH-NT-Mjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="-415"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4oj-gL-fim">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="qAY-Gp-ppb" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="30h-xP-3Hu">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="Uzn-b6-aHY"/>
+                        <segue destination="URg-Tv-3Mh" kind="relationship" relationship="viewControllers" id="1Gy-iq-GkF"/>
+                        <segue destination="01x-fe-V2W" kind="relationship" relationship="viewControllers" id="Vws-e9-8yN"/>
+                        <segue destination="yn4-Q2-WZb" kind="relationship" relationship="viewControllers" id="95D-83-98z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5I-Cb-K87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="-910"/>
+        </scene>
+        <!--Star Gazer View Controller - Home-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="StarGazerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="16w-Tw-b4G">
+                                <rect key="frame" x="20" y="83" width="280" height="312"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="ForecastBackground.png" id="QMS-N7-j50">
+                                        <rect key="frame" x="-15" y="-16" width="303" height="325"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="backgroundColor" red="0.95986128826530615" green="0.95986128826530615" blue="0.95986128826530615" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="PIk-pu-2B3">
+                                        <rect key="frame" x="18" y="-4" width="259" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.76004161005434789" green="0.76004161005434789" blue="0.76004161005434789" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="gL2-vT-8Zh">
+                                        <rect key="frame" x="98" y="214" width="143" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="t7M-6G-gFi">
+                                        <rect key="frame" x="98" y="240" width="128" height="29"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="10" adjustsFontSizeToFit="NO" id="EGS-cw-W1G">
+                                        <rect key="frame" x="20" y="32" width="216" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <color key="textColor" red="0.49834582270408168" green="0.49834582270408168" blue="0.49834582270408168" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="Nightsky.png" id="bxb-Ap-oUI">
+                                        <rect key="frame" x="18" y="98" width="242" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cloud cover: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="pXI-Le-URH">
+                                        <rect key="frame" x="18" y="217" width="98" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                        <color key="textColor" red="0.50484489293377122" green="0.49273362933990211" blue="0.50558035714285721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Moon Phase:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="xjN-Lg-cML">
+                                        <rect key="frame" x="18" y="244" width="93" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                        <color key="textColor" red="0.49598901240099252" green="0.4840902019882678" blue="0.49671157525510201" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="7r2-dm-jSU">
+                                        <rect key="frame" x="0.0" y="20" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tSe-nd-HVd">
+                                        <rect key="frame" x="88" y="308" width="46" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pgg-PK-mcx">
+                                        <rect key="frame" x="45" y="308" width="48" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96466438137755106" green="0.96466438137755106" blue="0.96466438137755106" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="dkz-Am-dS3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="TyI-Fs-dOX">
+                                        <rect key="frame" x="125" y="9" width="71" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43056441326530615" green="0.43056441326530615" blue="0.43056441326530615" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="l2t-Ji-Y3G">
+                                <rect key="frame" x="22" y="53" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nku-LP-Kad">
+                                <rect key="frame" x="119" y="56" width="189" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.50085698341836737" green="0.50085698341836737" blue="0.50085698341836737" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="bvR-Yv-9zr">
+                                <rect key="frame" x="154" y="393" width="146" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="E0s-I5-5U1">
+                                        <rect key="frame" x="1" y="0.0" width="144" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addGazingToCalendar" destination="2" eventType="touchUpInside" id="uFb-qB-JyK"/>
+                                            <action selector="addToCalendar:" destination="4" eventType="touchUpInside" id="C26-Et-7Zm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CSD-yn-b9f">
+                                        <rect key="frame" x="52" y="11" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label=""/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94917889030612246" green="0.94917889030612246" blue="0.94917889030612246" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96129623724489799" green="0.96129623724489799" blue="0.96129623724489799" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="Bn6-a8-BtB"/>
+                    <navigationItem key="navigationItem" id="ayH-9x-eYp"/>
+                    <connections>
+                        <outlet property="addedToCalendar" destination="CSD-yn-b9f" id="uD6-LI-qs8"/>
+                        <outlet property="calendarEvent" destination="E0s-I5-5U1" id="c8b-MQ-AUC"/>
+                        <outlet property="calendarView" destination="bvR-Yv-9zr" id="uHh-aA-D2D"/>
+                        <outlet property="cityAndState" destination="Nku-LP-Kad" id="8Mn-50-BJg"/>
+                        <outlet property="cloudCover" destination="gL2-vT-8Zh" id="a4B-Xy-msx"/>
+                        <outlet property="dateInfo" destination="l2t-Ji-Y3G" id="rsJ-j2-L6y"/>
+                        <outlet property="facebookButton" destination="Pgg-PK-mcx" id="4Bk-mV-FhD"/>
+                        <outlet property="gazingVerdict" destination="PIk-pu-2B3" id="2Db-xj-gTk"/>
+                        <outlet property="gazometer" destination="EGS-cw-W1G" id="fTI-GE-OBr"/>
+                        <outlet property="lunarPhase" destination="t7M-6G-gFi" id="505-CB-1zR"/>
+                        <outlet property="spinner" destination="7r2-dm-jSU" id="nkt-LE-Lcy"/>
+                        <outlet property="twitterButton" destination="tSe-nd-HVd" id="Zow-0t-sbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="470"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ForecastBackground.png" width="290" height="320"/>
+        <image name="Nightsky.png" width="220" height="80"/>
+    </resources>
+    <classes>
+        <class className="GazingTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GazingTableViewController.h"/>
+        </class>
+        <class className="StarGazerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StarGazerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addGazingToCalendar"/>
+                <relationship kind="outlet" name="addedToCalendar" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="calendarEvent" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="calendarView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="cityAndState" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cloudCover" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dateInfo" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="gazingVerdict" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="gazometer" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lunarPhase" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spinner" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="twitterButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="WhereToGazeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WhereToGazeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="weblink" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

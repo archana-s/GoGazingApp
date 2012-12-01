@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		238454121637B6AE002E7C0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238454111637B6AE002E7C0E /* Default-568h@2x.png */; };
+		2384541C1637BDE2002E7C0E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384541B1637BDE2002E7C0E /* EventKit.framework */; };
+		2384542016462EF7002E7C0E /* GoGazeTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2384541F16462EF7002E7C0E /* GoGazeTwitter.m */; };
+		2384542316475D46002E7C0E /* GazingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2384542216475D46002E7C0E /* GazingTableViewController.m */; };
+		2384542816597BFE002E7C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384542716597BFE002E7C0E /* CoreLocation.framework */; };
+		238FDBA116618503008ACE40 /* ForecastBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA016618503008ACE40 /* ForecastBackground.png */; };
+		238FDBA31661938E008ACE40 /* Nightsky.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA21661938E008ACE40 /* Nightsky.png */; };
+		238FDBA51661C5D1008ACE40 /* addtocalendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA41661C5D1008ACE40 /* addtocalendar.png */; };
+		238FDBA71662DAC3008ACE40 /* addtocalendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */; };
+		238FDBA91662DACD008ACE40 /* addtocalendarpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */; };
+		238FDBB01662E505008ACE40 /* addtocalendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */; };
+		238FDBB11662E505008ACE40 /* addtocalendarpressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */; };
+		238FDBB31662EFD8008ACE40 /* twitterbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */; };
+		238FDBB51662F944008ACE40 /* facebookbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBB41662F944008ACE40 /* facebookbutton@2x.png */; };
+		239F746615FC696E00A9E75D /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746515FC696E00A9E75D /* Background.jpg */; };
+		239F746B15FD1B7500A9E75D /* CrescentSky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746A15FD1B7500A9E75D /* CrescentSky.jpg */; };
+		239F746D15FD973000A9E75D /* separator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746C15FD973000A9E75D /* separator.jpg */; };
+		239F746F15FEE9F100A9E75D /* CalendarButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746E15FEE9F100A9E75D /* CalendarButton.jpg */; };
+		239F747215FF0AD600A9E75D /* WhereToGazeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */; };
+		239F74CB16065AD600A9E75D /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F74CA16065AD600A9E75D /* AppController.m */; };
+		23B28B6B15D6ECF100E56970 /* CloudCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B28B6A15D6ECF100E56970 /* CloudCover.m */; };
+		23B28B6E15D6EE6800E56970 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B28B6D15D6EE6800E56970 /* XMLParser.m */; };
+		23B28B7315FC51AC00E56970 /* NotePaperBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */; };
+		23B8BB1715CF8204002746F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1615CF8204002746F5 /* UIKit.framework */; };
+		23B8BB1915CF8204002746F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1815CF8204002746F5 /* Foundation.framework */; };
+		23B8BB1B15CF8204002746F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1A15CF8204002746F5 /* CoreGraphics.framework */; };
+		23B8BB2115CF8204002746F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23B8BB1F15CF8204002746F5 /* InfoPlist.strings */; };
+		23B8BB2315CF8204002746F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB2215CF8204002746F5 /* main.m */; };
+		23B8BB2715CF8204002746F5 /* StarGazerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB2615CF8204002746F5 /* StarGazerAppDelegate.m */; };
+		23B8BB2A15CF8204002746F5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B8BB2815CF8204002746F5 /* MainStoryboard_iPhone.storyboard */; };
+		23B8BB2D15CF8204002746F5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B8BB2B15CF8204002746F5 /* MainStoryboard_iPad.storyboard */; };
+		23B8BB3015CF8204002746F5 /* StarGazerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB2F15CF8204002746F5 /* StarGazerViewController.m */; };
+		23B8BB3815CF8204002746F5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB3715CF8204002746F5 /* SenTestingKit.framework */; };
+		23B8BB3915CF8204002746F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1615CF8204002746F5 /* UIKit.framework */; };
+		23B8BB3A15CF8204002746F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1815CF8204002746F5 /* Foundation.framework */; };
+		23B8BB4215CF8205002746F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23B8BB4015CF8205002746F5 /* InfoPlist.strings */; };
+		23B8BB4515CF8205002746F5 /* StarGazerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB4415CF8205002746F5 /* StarGazerTests.m */; };
+		23B8BB5015D0E9B4002746F5 /* StarGazer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB4F15D0E9B4002746F5 /* StarGazer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23B8BB3B15CF8204002746F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B8BB0915CF8204002746F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B8BB1115CF8204002746F5;
+			remoteInfo = StarGazer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		238454111637B6AE002E7C0E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2384541B1637BDE2002E7C0E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		2384541E16462EF7002E7C0E /* GoGazeTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGazeTwitter.h; sourceTree = "<group>"; };
+		2384541F16462EF7002E7C0E /* GoGazeTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoGazeTwitter.m; sourceTree = "<group>"; };
+		2384542116475D46002E7C0E /* GazingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazingTableViewController.h; sourceTree = "<group>"; };
+		2384542216475D46002E7C0E /* GazingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazingTableViewController.m; sourceTree = "<group>"; };
+		2384542716597BFE002E7C0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		238FDBA016618503008ACE40 /* ForecastBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForecastBackground.png; sourceTree = "<group>"; };
+		238FDBA21661938E008ACE40 /* Nightsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nightsky.png; sourceTree = "<group>"; };
+		238FDBA41661C5D1008ACE40 /* addtocalendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendar.png; sourceTree = "<group>"; };
+		238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendarbutton.png; sourceTree = "<group>"; };
+		238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendarpressed.png; sourceTree = "<group>"; };
+		238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addtocalendarbutton@2x.png"; sourceTree = "<group>"; };
+		238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addtocalendarpressed@2x.png"; sourceTree = "<group>"; };
+		238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitterbutton@2x.png"; sourceTree = "<group>"; };
+		238FDBB41662F944008ACE40 /* facebookbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebookbutton@2x.png"; sourceTree = "<group>"; };
+		239F746515FC696E00A9E75D /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		239F746A15FD1B7500A9E75D /* CrescentSky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CrescentSky.jpg; sourceTree = "<group>"; };
+		239F746C15FD973000A9E75D /* separator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = separator.jpg; sourceTree = "<group>"; };
+		239F746E15FEE9F100A9E75D /* CalendarButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CalendarButton.jpg; sourceTree = "<group>"; };
+		239F747015FF0AD600A9E75D /* WhereToGazeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereToGazeViewController.h; sourceTree = "<group>"; };
+		239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereToGazeViewController.m; sourceTree = "<group>"; };
+		239F74C916065AD600A9E75D /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		239F74CA16065AD600A9E75D /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		23B28B6915D6ECF100E56970 /* CloudCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCover.h; sourceTree = "<group>"; };
+		23B28B6A15D6ECF100E56970 /* CloudCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCover.m; sourceTree = "<group>"; };
+		23B28B6C15D6EE6800E56970 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		23B28B6D15D6EE6800E56970 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NotePaperBackground.jpg; sourceTree = "<group>"; };
+		23B8BB1215CF8204002746F5 /* StarGazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarGazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B8BB1615CF8204002746F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		23B8BB1815CF8204002746F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		23B8BB1A15CF8204002746F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		23B8BB1E15CF8204002746F5 /* StarGazer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarGazer-Info.plist"; sourceTree = "<group>"; };
+		23B8BB2015CF8204002746F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23B8BB2215CF8204002746F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23B8BB2415CF8204002746F5 /* StarGazer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarGazer-Prefix.pch"; sourceTree = "<group>"; };
+		23B8BB2515CF8204002746F5 /* StarGazerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarGazerAppDelegate.h; sourceTree = "<group>"; };
+		23B8BB2615CF8204002746F5 /* StarGazerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarGazerAppDelegate.m; sourceTree = "<group>"; };
+		23B8BB2915CF8204002746F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		23B8BB2C15CF8204002746F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		23B8BB2E15CF8204002746F5 /* StarGazerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarGazerViewController.h; sourceTree = "<group>"; };
+		23B8BB2F15CF8204002746F5 /* StarGazerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarGazerViewController.m; sourceTree = "<group>"; };
+		23B8BB3615CF8204002746F5 /* StarGazerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarGazerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B8BB3715CF8204002746F5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		23B8BB3F15CF8205002746F5 /* StarGazerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarGazerTests-Info.plist"; sourceTree = "<group>"; };
+		23B8BB4115CF8205002746F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23B8BB4315CF8205002746F5 /* StarGazerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarGazerTests.h; sourceTree = "<group>"; };
+		23B8BB4415CF8205002746F5 /* StarGazerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarGazerTests.m; sourceTree = "<group>"; };
+		23B8BB4E15D0E9B4002746F5 /* StarGazer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarGazer.h; sourceTree = "<group>"; };
+		23B8BB4F15D0E9B4002746F5 /* StarGazer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarGazer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23B8BB0F15CF8204002746F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2384542816597BFE002E7C0E /* CoreLocation.framework in Frameworks */,
+				2384541C1637BDE2002E7C0E /* EventKit.framework in Frameworks */,
+				23B8BB1715CF8204002746F5 /* UIKit.framework in Frameworks */,
+				23B8BB1915CF8204002746F5 /* Foundation.framework in Frameworks */,
+				23B8BB1B15CF8204002746F5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B8BB3215CF8204002746F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8BB3815CF8204002746F5 /* SenTestingKit.framework in Frameworks */,
+				23B8BB3915CF8204002746F5 /* UIKit.framework in Frameworks */,
+				23B8BB3A15CF8204002746F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23B8BB0715CF8204002746F5 = {
+			isa = PBXGroup;
+			children = (
+				2384542716597BFE002E7C0E /* CoreLocation.framework */,
+				2384541B1637BDE2002E7C0E /* EventKit.framework */,
+				238454111637B6AE002E7C0E /* Default-568h@2x.png */,
+				23B8BB1C15CF8204002746F5 /* StarGazer */,
+				23B8BB3D15CF8205002746F5 /* StarGazerTests */,
+				23B8BB1515CF8204002746F5 /* Frameworks */,
+				23B8BB1315CF8204002746F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23B8BB1315CF8204002746F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23B8BB1215CF8204002746F5 /* StarGazer.app */,
+				23B8BB3615CF8204002746F5 /* StarGazerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23B8BB1515CF8204002746F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B8BB1615CF8204002746F5 /* UIKit.framework */,
+				23B8BB1815CF8204002746F5 /* Foundation.framework */,
+				23B8BB1A15CF8204002746F5 /* CoreGraphics.framework */,
+				23B8BB3715CF8204002746F5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23B8BB1C15CF8204002746F5 /* StarGazer */ = {
+			isa = PBXGroup;
+			children = (
+				238FDBA41661C5D1008ACE40 /* addtocalendar.png */,
+				238FDBA21661938E008ACE40 /* Nightsky.png */,
+				238FDBA016618503008ACE40 /* ForecastBackground.png */,
+				239F746C15FD973000A9E75D /* separator.jpg */,
+				239F746E15FEE9F100A9E75D /* CalendarButton.jpg */,
+				239F746A15FD1B7500A9E75D /* CrescentSky.jpg */,
+				239F746515FC696E00A9E75D /* Background.jpg */,
+				23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */,
+				23B8BB2515CF8204002746F5 /* StarGazerAppDelegate.h */,
+				239F74C916065AD600A9E75D /* AppController.h */,
+				239F74CA16065AD600A9E75D /* AppController.m */,
+				23B8BB2615CF8204002746F5 /* StarGazerAppDelegate.m */,
+				23B8BB2815CF8204002746F5 /* MainStoryboard_iPhone.storyboard */,
+				2384542116475D46002E7C0E /* GazingTableViewController.h */,
+				2384542216475D46002E7C0E /* GazingTableViewController.m */,
+				23B8BB2B15CF8204002746F5 /* MainStoryboard_iPad.storyboard */,
+				23B8BB2E15CF8204002746F5 /* StarGazerViewController.h */,
+				23B8BB2F15CF8204002746F5 /* StarGazerViewController.m */,
+				23B8BB1D15CF8204002746F5 /* Supporting Files */,
+				23B8BB4E15D0E9B4002746F5 /* StarGazer.h */,
+				23B8BB4F15D0E9B4002746F5 /* StarGazer.m */,
+				23B28B6915D6ECF100E56970 /* CloudCover.h */,
+				23B28B6A15D6ECF100E56970 /* CloudCover.m */,
+				23B28B6C15D6EE6800E56970 /* XMLParser.h */,
+				23B28B6D15D6EE6800E56970 /* XMLParser.m */,
+				239F747015FF0AD600A9E75D /* WhereToGazeViewController.h */,
+				239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */,
+				2384541E16462EF7002E7C0E /* GoGazeTwitter.h */,
+				2384541F16462EF7002E7C0E /* GoGazeTwitter.m */,
+			);
+			path = StarGazer;
+			sourceTree = "<group>";
+		};
+		23B8BB1D15CF8204002746F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238FDBB41662F944008ACE40 /* facebookbutton@2x.png */,
+				238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */,
+				238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */,
+				238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */,
+				238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */,
+				238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */,
+				23B8BB1E15CF8204002746F5 /* StarGazer-Info.plist */,
+				23B8BB1F15CF8204002746F5 /* InfoPlist.strings */,
+				23B8BB2215CF8204002746F5 /* main.m */,
+				23B8BB2415CF8204002746F5 /* StarGazer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23B8BB3D15CF8205002746F5 /* StarGazerTests */ = {
+			isa = PBXGroup;
+			children = (
+				23B8BB4315CF8205002746F5 /* StarGazerTests.h */,
+				23B8BB4415CF8205002746F5 /* StarGazerTests.m */,
+				23B8BB3E15CF8205002746F5 /* Supporting Files */,
+			);
+			path = StarGazerTests;
+			sourceTree = "<group>";
+		};
+		23B8BB3E15CF8205002746F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23B8BB3F15CF8205002746F5 /* StarGazerTests-Info.plist */,
+				23B8BB4015CF8205002746F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23B8BB1115CF8204002746F5 /* StarGazer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B8BB4815CF8205002746F5 /* Build configuration list for PBXNativeTarget "StarGazer" */;
+			buildPhases = (
+				23B8BB0E15CF8204002746F5 /* Sources */,
+				23B8BB0F15CF8204002746F5 /* Frameworks */,
+				23B8BB1015CF8204002746F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarGazer;
+			productName = StarGazer;
+			productReference = 23B8BB1215CF8204002746F5 /* StarGazer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23B8BB3515CF8204002746F5 /* StarGazerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B8BB4B15CF8205002746F5 /* Build configuration list for PBXNativeTarget "StarGazerTests" */;
+			buildPhases = (
+				23B8BB3115CF8204002746F5 /* Sources */,
+				23B8BB3215CF8204002746F5 /* Frameworks */,
+				23B8BB3315CF8204002746F5 /* Resources */,
+				23B8BB3415CF8204002746F5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B8BB3C15CF8204002746F5 /* PBXTargetDependency */,
+			);
+			name = StarGazerTests;
+			productName = StarGazerTests;
+			productReference = 23B8BB3615CF8204002746F5 /* StarGazerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B8BB0915CF8204002746F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = StarGazer;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 23B8BB0C15CF8204002746F5 /* Build configuration list for PBXProject "StarGazer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23B8BB0715CF8204002746F5;
+			productRefGroup = 23B8BB1315CF8204002746F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23B8BB1115CF8204002746F5 /* StarGazer */,
+				23B8BB3515CF8204002746F5 /* StarGazerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B8BB1015CF8204002746F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8BB2115CF8204002746F5 /* InfoPlist.strings in Resources */,
+				23B8BB2A15CF8204002746F5 /* MainStoryboard_iPhone.storyboard in Resources */,
+				23B8BB2D15CF8204002746F5 /* MainStoryboard_iPad.storyboard in Resources */,
+				23B28B7315FC51AC00E56970 /* NotePaperBackground.jpg in Resources */,
+				239F746615FC696E00A9E75D /* Background.jpg in Resources */,
+				239F746B15FD1B7500A9E75D /* CrescentSky.jpg in Resources */,
+				239F746D15FD973000A9E75D /* separator.jpg in Resources */,
+				239F746F15FEE9F100A9E75D /* CalendarButton.jpg in Resources */,
+				238454121637B6AE002E7C0E /* Default-568h@2x.png in Resources */,
+				238FDBA116618503008ACE40 /* ForecastBackground.png in Resources */,
+				238FDBA31661938E008ACE40 /* Nightsky.png in Resources */,
+				238FDBA51661C5D1008ACE40 /* addtocalendar.png in Resources */,
+				238FDBA71662DAC3008ACE40 /* addtocalendarbutton.png in Resources */,
+				238FDBA91662DACD008ACE40 /* addtocalendarpressed.png in Resources */,
+				238FDBB01662E505008ACE40 /* addtocalendarbutton@2x.png in Resources */,
+				238FDBB11662E505008ACE40 /* addtocalendarpressed@2x.png in Resources */,
+				238FDBB31662EFD8008ACE40 /* twitterbutton@2x.png in Resources */,
+				238FDBB51662F944008ACE40 /* facebookbutton@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B8BB3315CF8204002746F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8BB4215CF8205002746F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23B8BB3415CF8204002746F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B8BB0E15CF8204002746F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8BB2315CF8204002746F5 /* main.m in Sources */,
+				23B8BB2715CF8204002746F5 /* StarGazerAppDelegate.m in Sources */,
+				23B8BB3015CF8204002746F5 /* StarGazerViewController.m in Sources */,
+				23B8BB5015D0E9B4002746F5 /* StarGazer.m in Sources */,
+				23B28B6B15D6ECF100E56970 /* CloudCover.m in Sources */,
+				23B28B6E15D6EE6800E56970 /* XMLParser.m in Sources */,
+				239F747215FF0AD600A9E75D /* WhereToGazeViewController.m in Sources */,
+				2384542016462EF7002E7C0E /* GoGazeTwitter.m in Sources */,
+				2384542316475D46002E7C0E /* GazingTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B8BB3115CF8204002746F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8BB4515CF8205002746F5 /* StarGazerTests.m in Sources */,
+				239F74CB16065AD600A9E75D /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23B8BB3C15CF8204002746F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B8BB1115CF8204002746F5 /* StarGazer */;
+			targetProxy = 23B8BB3B15CF8204002746F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23B8BB1F15CF8204002746F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B8BB2015CF8204002746F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23B8BB2815CF8204002746F5 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B8BB2915CF8204002746F5 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		23B8BB2B15CF8204002746F5 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B8BB2C15CF8204002746F5 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		23B8BB4015CF8205002746F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B8BB4115CF8205002746F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23B8BB4615CF8205002746F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23B8BB4715CF8205002746F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23B8BB4915CF8205002746F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazer/StarGazer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		23B8BB4A15CF8205002746F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazer/StarGazer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		23B8BB4C15CF8205002746F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarGazer.app/StarGazer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazerTests/StarGazerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		23B8BB4D15CF8205002746F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarGazer.app/StarGazer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazerTests/StarGazerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23B8BB0C15CF8204002746F5 /* Build configuration list for PBXProject "StarGazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B8BB4615CF8205002746F5 /* Debug */,
+				23B8BB4715CF8205002746F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B8BB4815CF8205002746F5 /* Build configuration list for PBXNativeTarget "StarGazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B8BB4915CF8205002746F5 /* Debug */,
+				23B8BB4A15CF8205002746F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B8BB4B15CF8205002746F5 /* Build configuration list for PBXNativeTarget "StarGazerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B8BB4C15CF8205002746F5 /* Debug */,
+				23B8BB4D15CF8205002746F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23B8BB0915CF8204002746F5 /* Project object */;
+}
