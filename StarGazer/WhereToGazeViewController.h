@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface WhereToGazeViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *weblink;
+@property (strong, nonatomic) NSArray *annotations; // of id <MKAnnotation>
 @end

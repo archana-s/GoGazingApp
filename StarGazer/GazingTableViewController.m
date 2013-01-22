@@ -67,17 +67,17 @@
     static NSString *CellIdentifier = @"Gazing Tweets";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-   /* cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.numberOfLines = 3;
     
     // Configure the cell...
-    cell.textLabel.text = [_tweets objectAtIndex:indexPath.row];*/
+    cell.textLabel.text = [_tweets objectAtIndex:indexPath.row];
     
-    UIWebView *htmlView = [[UIWebView alloc] initWithFrame:cell.contentView.frame];
+   /* UIWebView *htmlView = [[UIWebView alloc] initWithFrame:cell.contentView.frame];
     NSString *htmlTweet = [self formatTweet:[_tweets objectAtIndex:indexPath.row]];
     [htmlView loadHTMLString:htmlTweet baseURL:nil];
     htmlView.delegate  = nil;
-    [cell.contentView addSubview:htmlView];
+    [cell.contentView addSubview:htmlView];*/
     return cell;
 }
 

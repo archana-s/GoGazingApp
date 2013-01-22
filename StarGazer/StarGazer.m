@@ -63,17 +63,23 @@
 {
     NSString *condition;
     
-    if(cloudCoverValue > 12)
+    if(cloudCoverValue <= 12 && ((lunarPosition >= 0 && lunarPosition < 3.75) || (lunarPosition > 26.25 && lunarPosition <= 29)))
+        {
+             condition = [[NSString alloc] initWithString:@"Perfect dark night for gazing."];
+        }
+    
+    if(cloudCoverValue > 12 && cloudCoverValue < 30 &&
+        ((lunarPosition >= 0 && lunarPosition < 3.75) || (lunarPosition > 26.25 && lunarPosition <= 29)))
     {
-        condition = [[NSString alloc] initWithString:@"Too cloudy to gaze."];
+        condition = [[NSString alloc] initWithString:@"Dark night but a little cloudy. Not too bad to gaze."];
     }
-    else if (lunarPosition > 0 && lunarPosition <= 26.25)
+    else if (lunarPosition >=3.75 && lunarPosition <= 26.25)
     {
         condition = [[NSString alloc] initWithString:@"Moon light is too bright to star gaze."];
     }
-    else if (lunarPosition == 0 || lunarPosition > 26.25)
+    else if(cloudCoverValue >= 30)
     {
-        condition = [[NSString alloc] initWithString:@"Minimal moon light. Perfect star gaze conditions."];
+        condition = [[NSString alloc] initWithString:@"Too cloudy to gaze."];
     }
     
     _starGazeResult = [[NSMutableString alloc] initWithString:condition];
@@ -169,7 +175,7 @@
     }
     else if(lunarPosition == 26.25)
     {
-        _lunarPhase = @"Waxing Crescent";
+        _lunarPhase = @"Waning Crescent";
     }
     else if(lunarPosition > 26.25 && lunarPosition <= 29)
     {
@@ -285,7 +291,10 @@
     
     cloudCoverValue = avg;
     _cloudCoverAmount = [[NSString alloc] initWithFormat:@"%d%%", avg];
-    [[self delegate] updateCloudCoverValue:_cloudCoverAmount];    
+    [[self delegate] updateCloudCoverValue:_cloudCoverAmount];
+    
+    //TASK: Once cloud cover info is stored is when we should analyze gazing conditions
+    [self analyzeStarGazing];
 }
 
 -(NSString *) cleanUpString:(NSString *) string
@@ -310,9 +319,13 @@
     
     // Add the begin date and end date 
     [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fourDaysFromToday objectAtIndex:0]]];
+    // append the time from which you want the weather data
     [_urlToNDFD appendString:@"T20%3A00%3A00&end="];
     [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fourDaysFromToday objectAtIndex:1]]];
+    [_urlToNDFD appendString:@"T01%3A00%3A00"];
     
+    NSLog(@"URL for regular cloud cover:");
+    NSLog(_urlToNDFD);
     // Create the request.
     NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:_urlToNDFD]];
     
@@ -349,7 +362,7 @@
    // NSString * newData = [[NSString alloc] initWithData:_weatherData encoding:NSUTF8StringEncoding];
    // NSLog(newData);
     
-    // Now that we have all the data, call the parser to fetch the cloud cover info
+    //TASK: Now that we have all the data, call the parser to fetch the cloud cover info
     [self doParseForCloudCover:_weatherData];
 }
 

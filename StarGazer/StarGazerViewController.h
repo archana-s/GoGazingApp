@@ -20,9 +20,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateInfo;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIView *calendarView;
-@property (weak, nonatomic) IBOutlet UILabel *addedToCalendar;
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UILabel *cityAndState;
+@property (strong, nonatomic) IBOutlet UIImageView *moonPhaseImage;
 @property (nonatomic, strong) NSArray *tweets;
+
 -(IBAction)addGazingToCalendar;
+-(void) loadMeEverytime;
 @end

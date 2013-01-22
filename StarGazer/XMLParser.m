@@ -79,6 +79,8 @@
             // init the ad hoc string with the value     
             CloudCover *cc = [[CloudCover alloc] init];
             cc.value = string;
+            NSLog(@"Cloud cover val: ");
+            NSLog(string);
             [_foundValues addObject:cc];
         }
     }
@@ -87,6 +89,22 @@
         if([currentElementName isEqualToString:@"text"] && !isRepeat)
         {
             [_foundValues addObject:string];
+        }
+    }
+    else if ([_elementToLookFor isEqualToString:@"cloud-cover-group"])
+    {
+        NSMutableString *curedString = [[NSMutableString alloc] initWithString:string];
+        [curedString replaceOccurrencesOfString:@" " withString:@"" options:nil
+                                          range:NSMakeRange(0, [curedString length])];
+        [curedString replaceOccurrencesOfString:@"\n" withString:@"" options:nil
+                                          range:NSMakeRange(0, [curedString length])];
+        if([currentElementName isEqualToString:@"value"] && [curedString length]!=0)
+        {
+            // init the ad hoc string with the value
+            NSString *val = [[NSString alloc] initWithString:string];
+            NSLog(@"Cloud cover value:");
+            NSLog(val);
+            [_foundValues addObject:val];
         }
     }
 }

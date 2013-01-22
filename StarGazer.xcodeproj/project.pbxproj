@@ -7,29 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		237B7A26168A66EB006C13F5 /* firstquarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A18168A66EA006C13F5 /* firstquarter.png */; };
+		237B7A27168A66EB006C13F5 /* fullmoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A19168A66EA006C13F5 /* fullmoon.png */; };
+		237B7A29168A66EB006C13F5 /* newmoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A1B168A66EA006C13F5 /* newmoon.png */; };
+		237B7A2B168A66EB006C13F5 /* thirdquarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A1D168A66EB006C13F5 /* thirdquarter.png */; };
+		237B7A2C168A66EB006C13F5 /* waningcrescent.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A1E168A66EB006C13F5 /* waningcrescent.png */; };
+		237B7A2E168A66EB006C13F5 /* waninggibbous.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A20168A66EB006C13F5 /* waninggibbous.png */; };
+		237B7A30168A66EB006C13F5 /* waxingcrescent.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A22168A66EB006C13F5 /* waxingcrescent.png */; };
+		237B7A32168A66EB006C13F5 /* waxinggibbous.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A24168A66EB006C13F5 /* waxinggibbous.png */; };
+		237B7A3C168A6E7D006C13F5 /* firstquarter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A34168A6E7C006C13F5 /* firstquarter@2x.png */; };
+		237B7A3D168A6E7D006C13F5 /* fullmoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A35168A6E7C006C13F5 /* fullmoon@2x.png */; };
+		237B7A3E168A6E7D006C13F5 /* newmoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A36168A6E7D006C13F5 /* newmoon@2x.png */; };
+		237B7A3F168A6E7D006C13F5 /* thirdquarter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A37168A6E7D006C13F5 /* thirdquarter@2x.png */; };
+		237B7A40168A6E7D006C13F5 /* waningcrescent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A38168A6E7D006C13F5 /* waningcrescent@2x.png */; };
+		237B7A41168A6E7D006C13F5 /* waninggibbous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A39168A6E7D006C13F5 /* waninggibbous@2x.png */; };
+		237B7A42168A6E7D006C13F5 /* waxingcrescent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A3A168A6E7D006C13F5 /* waxingcrescent@2x.png */; };
+		237B7A43168A6E7D006C13F5 /* waxinggibbous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A3B168A6E7D006C13F5 /* waxinggibbous@2x.png */; };
+		237B7A4D168A863E006C13F5 /* clearmeter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A4C168A863E006C13F5 /* clearmeter@2x.png */; };
+		237B7A4F168AE04C006C13F5 /* clearmeter.png in Resources */ = {isa = PBXBuildFile; fileRef = 237B7A4E168AE04C006C13F5 /* clearmeter.png */; };
 		238454121637B6AE002E7C0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238454111637B6AE002E7C0E /* Default-568h@2x.png */; };
 		2384541C1637BDE2002E7C0E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384541B1637BDE2002E7C0E /* EventKit.framework */; };
 		2384542016462EF7002E7C0E /* GoGazeTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2384541F16462EF7002E7C0E /* GoGazeTwitter.m */; };
 		2384542316475D46002E7C0E /* GazingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2384542216475D46002E7C0E /* GazingTableViewController.m */; };
 		2384542816597BFE002E7C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384542716597BFE002E7C0E /* CoreLocation.framework */; };
 		238FDBA116618503008ACE40 /* ForecastBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA016618503008ACE40 /* ForecastBackground.png */; };
-		238FDBA31661938E008ACE40 /* Nightsky.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA21661938E008ACE40 /* Nightsky.png */; };
-		238FDBA51661C5D1008ACE40 /* addtocalendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA41661C5D1008ACE40 /* addtocalendar.png */; };
-		238FDBA71662DAC3008ACE40 /* addtocalendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */; };
-		238FDBA91662DACD008ACE40 /* addtocalendarpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */; };
-		238FDBB01662E505008ACE40 /* addtocalendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */; };
-		238FDBB11662E505008ACE40 /* addtocalendarpressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */; };
 		238FDBB31662EFD8008ACE40 /* twitterbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */; };
 		238FDBB51662F944008ACE40 /* facebookbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 238FDBB41662F944008ACE40 /* facebookbutton@2x.png */; };
-		239F746615FC696E00A9E75D /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746515FC696E00A9E75D /* Background.jpg */; };
-		239F746B15FD1B7500A9E75D /* CrescentSky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746A15FD1B7500A9E75D /* CrescentSky.jpg */; };
-		239F746D15FD973000A9E75D /* separator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746C15FD973000A9E75D /* separator.jpg */; };
-		239F746F15FEE9F100A9E75D /* CalendarButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239F746E15FEE9F100A9E75D /* CalendarButton.jpg */; };
+		23934B37168FD6FB00B7E4CD /* GazeLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23934B36168FD6FB00B7E4CD /* GazeLocations.plist */; };
 		239F747215FF0AD600A9E75D /* WhereToGazeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */; };
-		239F74CB16065AD600A9E75D /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239F74CA16065AD600A9E75D /* AppController.m */; };
+		23ACF03516A8F0610086EED2 /* ForecastBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 23ACF03416A8F0610086EED2 /* ForecastBackground.png */; };
 		23B28B6B15D6ECF100E56970 /* CloudCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B28B6A15D6ECF100E56970 /* CloudCover.m */; };
 		23B28B6E15D6EE6800E56970 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B28B6D15D6EE6800E56970 /* XMLParser.m */; };
-		23B28B7315FC51AC00E56970 /* NotePaperBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */; };
 		23B8BB1715CF8204002746F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1615CF8204002746F5 /* UIKit.framework */; };
 		23B8BB1915CF8204002746F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1815CF8204002746F5 /* Foundation.framework */; };
 		23B8BB1B15CF8204002746F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B8BB1A15CF8204002746F5 /* CoreGraphics.framework */; };
@@ -45,6 +53,17 @@
 		23B8BB4215CF8205002746F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23B8BB4015CF8205002746F5 /* InfoPlist.strings */; };
 		23B8BB4515CF8205002746F5 /* StarGazerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB4415CF8205002746F5 /* StarGazerTests.m */; };
 		23B8BB5015D0E9B4002746F5 /* StarGazer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B8BB4F15D0E9B4002746F5 /* StarGazer.m */; };
+		23C2CBB8168D0E3A0071CA4F /* ForecastBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBB7168D0E3A0071CA4F /* ForecastBackground@2x.png */; };
+		23C2CBBD168E6AC10071CA4F /* AddCalendarButtonDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBBA168E6AC10071CA4F /* AddCalendarButtonDisabled@2x.png */; };
+		23C2CBBE168E6AC10071CA4F /* AddCalendarButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBBB168E6AC10071CA4F /* AddCalendarButtonHighlighted@2x.png */; };
+		23C2CBBF168E6AC10071CA4F /* AddCalendarButtonUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBBC168E6AC10071CA4F /* AddCalendarButtonUp@2x.png */; };
+		23C2CBC3168E70260071CA4F /* AddCalendarButtonDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBC0168E70260071CA4F /* AddCalendarButtonDisabled.png */; };
+		23C2CBC4168E70260071CA4F /* AddCalendarButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBC1168E70260071CA4F /* AddCalendarButtonHighlighted.png */; };
+		23C2CBC5168E70260071CA4F /* AddCalendarButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C2CBC2168E70260071CA4F /* AddCalendarButtonUp.png */; };
+		23F12F9916785CB2005FB18C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F12F9816785CB2005FB18C /* MapKit.framework */; };
+		23F12F9C167869D5005FB18C /* GazeLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12F9B167869D5005FB18C /* GazeLocations.m */; };
+		23F12FA2167D6107005FB18C /* GazeSpotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12FA1167D6107005FB18C /* GazeSpotAnnotation.m */; };
+		23F12FA5167D61B4005FB18C /* GazeSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12FA4167D61B4005FB18C /* GazeSpot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +77,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23007062166B224E0096505B /* StarGazer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = StarGazer.entitlements; sourceTree = "<group>"; };
+		237B7A18168A66EA006C13F5 /* firstquarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstquarter.png; sourceTree = "<group>"; };
+		237B7A19168A66EA006C13F5 /* fullmoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullmoon.png; sourceTree = "<group>"; };
+		237B7A1B168A66EA006C13F5 /* newmoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newmoon.png; sourceTree = "<group>"; };
+		237B7A1D168A66EB006C13F5 /* thirdquarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thirdquarter.png; sourceTree = "<group>"; };
+		237B7A1E168A66EB006C13F5 /* waningcrescent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waningcrescent.png; sourceTree = "<group>"; };
+		237B7A20168A66EB006C13F5 /* waninggibbous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waninggibbous.png; sourceTree = "<group>"; };
+		237B7A22168A66EB006C13F5 /* waxingcrescent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waxingcrescent.png; sourceTree = "<group>"; };
+		237B7A24168A66EB006C13F5 /* waxinggibbous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waxinggibbous.png; sourceTree = "<group>"; };
+		237B7A34168A6E7C006C13F5 /* firstquarter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstquarter@2x.png"; sourceTree = "<group>"; };
+		237B7A35168A6E7C006C13F5 /* fullmoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullmoon@2x.png"; sourceTree = "<group>"; };
+		237B7A36168A6E7D006C13F5 /* newmoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newmoon@2x.png"; sourceTree = "<group>"; };
+		237B7A37168A6E7D006C13F5 /* thirdquarter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thirdquarter@2x.png"; sourceTree = "<group>"; };
+		237B7A38168A6E7D006C13F5 /* waningcrescent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waningcrescent@2x.png"; sourceTree = "<group>"; };
+		237B7A39168A6E7D006C13F5 /* waninggibbous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waninggibbous@2x.png"; sourceTree = "<group>"; };
+		237B7A3A168A6E7D006C13F5 /* waxingcrescent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waxingcrescent@2x.png"; sourceTree = "<group>"; };
+		237B7A3B168A6E7D006C13F5 /* waxinggibbous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waxinggibbous@2x.png"; sourceTree = "<group>"; };
+		237B7A4C168A863E006C13F5 /* clearmeter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearmeter@2x.png"; sourceTree = "<group>"; };
+		237B7A4E168AE04C006C13F5 /* clearmeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearmeter.png; sourceTree = "<group>"; };
 		238454111637B6AE002E7C0E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2384541B1637BDE2002E7C0E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		2384541E16462EF7002E7C0E /* GoGazeTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGazeTwitter.h; sourceTree = "<group>"; };
@@ -66,27 +104,16 @@
 		2384542216475D46002E7C0E /* GazingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazingTableViewController.m; sourceTree = "<group>"; };
 		2384542716597BFE002E7C0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		238FDBA016618503008ACE40 /* ForecastBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForecastBackground.png; sourceTree = "<group>"; };
-		238FDBA21661938E008ACE40 /* Nightsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nightsky.png; sourceTree = "<group>"; };
-		238FDBA41661C5D1008ACE40 /* addtocalendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendar.png; sourceTree = "<group>"; };
-		238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendarbutton.png; sourceTree = "<group>"; };
-		238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtocalendarpressed.png; sourceTree = "<group>"; };
-		238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addtocalendarbutton@2x.png"; sourceTree = "<group>"; };
-		238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addtocalendarpressed@2x.png"; sourceTree = "<group>"; };
 		238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitterbutton@2x.png"; sourceTree = "<group>"; };
 		238FDBB41662F944008ACE40 /* facebookbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebookbutton@2x.png"; sourceTree = "<group>"; };
-		239F746515FC696E00A9E75D /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
-		239F746A15FD1B7500A9E75D /* CrescentSky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CrescentSky.jpg; sourceTree = "<group>"; };
-		239F746C15FD973000A9E75D /* separator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = separator.jpg; sourceTree = "<group>"; };
-		239F746E15FEE9F100A9E75D /* CalendarButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CalendarButton.jpg; sourceTree = "<group>"; };
+		23934B36168FD6FB00B7E4CD /* GazeLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GazeLocations.plist; sourceTree = "<group>"; };
 		239F747015FF0AD600A9E75D /* WhereToGazeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereToGazeViewController.h; sourceTree = "<group>"; };
 		239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereToGazeViewController.m; sourceTree = "<group>"; };
-		239F74C916065AD600A9E75D /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		239F74CA16065AD600A9E75D /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		23ACF03416A8F0610086EED2 /* ForecastBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForecastBackground.png; sourceTree = "<group>"; };
 		23B28B6915D6ECF100E56970 /* CloudCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCover.h; sourceTree = "<group>"; };
 		23B28B6A15D6ECF100E56970 /* CloudCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCover.m; sourceTree = "<group>"; };
 		23B28B6C15D6EE6800E56970 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		23B28B6D15D6EE6800E56970 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
-		23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NotePaperBackground.jpg; sourceTree = "<group>"; };
 		23B8BB1215CF8204002746F5 /* StarGazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarGazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B8BB1615CF8204002746F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		23B8BB1815CF8204002746F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +136,20 @@
 		23B8BB4415CF8205002746F5 /* StarGazerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarGazerTests.m; sourceTree = "<group>"; };
 		23B8BB4E15D0E9B4002746F5 /* StarGazer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarGazer.h; sourceTree = "<group>"; };
 		23B8BB4F15D0E9B4002746F5 /* StarGazer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarGazer.m; sourceTree = "<group>"; };
+		23C2CBB7168D0E3A0071CA4F /* ForecastBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForecastBackground@2x.png"; sourceTree = "<group>"; };
+		23C2CBBA168E6AC10071CA4F /* AddCalendarButtonDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddCalendarButtonDisabled@2x.png"; sourceTree = "<group>"; };
+		23C2CBBB168E6AC10071CA4F /* AddCalendarButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddCalendarButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		23C2CBBC168E6AC10071CA4F /* AddCalendarButtonUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddCalendarButtonUp@2x.png"; sourceTree = "<group>"; };
+		23C2CBC0168E70260071CA4F /* AddCalendarButtonDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddCalendarButtonDisabled.png; sourceTree = "<group>"; };
+		23C2CBC1168E70260071CA4F /* AddCalendarButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddCalendarButtonHighlighted.png; sourceTree = "<group>"; };
+		23C2CBC2168E70260071CA4F /* AddCalendarButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddCalendarButtonUp.png; sourceTree = "<group>"; };
+		23F12F9816785CB2005FB18C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		23F12F9A167869D4005FB18C /* GazeLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeLocations.h; sourceTree = "<group>"; };
+		23F12F9B167869D5005FB18C /* GazeLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeLocations.m; sourceTree = "<group>"; };
+		23F12FA0167D6107005FB18C /* GazeSpotAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeSpotAnnotation.h; sourceTree = "<group>"; };
+		23F12FA1167D6107005FB18C /* GazeSpotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeSpotAnnotation.m; sourceTree = "<group>"; };
+		23F12FA3167D61B4005FB18C /* GazeSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeSpot.h; sourceTree = "<group>"; };
+		23F12FA4167D61B4005FB18C /* GazeSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeSpot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F12F9916785CB2005FB18C /* MapKit.framework in Frameworks */,
 				2384542816597BFE002E7C0E /* CoreLocation.framework in Frameworks */,
 				2384541C1637BDE2002E7C0E /* EventKit.framework in Frameworks */,
 				23B8BB1715CF8204002746F5 /* UIKit.framework in Frameworks */,
@@ -140,6 +182,7 @@
 		23B8BB0715CF8204002746F5 = {
 			isa = PBXGroup;
 			children = (
+				23F12F9816785CB2005FB18C /* MapKit.framework */,
 				2384542716597BFE002E7C0E /* CoreLocation.framework */,
 				2384541B1637BDE2002E7C0E /* EventKit.framework */,
 				238454111637B6AE002E7C0E /* Default-568h@2x.png */,
@@ -173,17 +216,9 @@
 		23B8BB1C15CF8204002746F5 /* StarGazer */ = {
 			isa = PBXGroup;
 			children = (
-				238FDBA41661C5D1008ACE40 /* addtocalendar.png */,
-				238FDBA21661938E008ACE40 /* Nightsky.png */,
+				23007062166B224E0096505B /* StarGazer.entitlements */,
 				238FDBA016618503008ACE40 /* ForecastBackground.png */,
-				239F746C15FD973000A9E75D /* separator.jpg */,
-				239F746E15FEE9F100A9E75D /* CalendarButton.jpg */,
-				239F746A15FD1B7500A9E75D /* CrescentSky.jpg */,
-				239F746515FC696E00A9E75D /* Background.jpg */,
-				23B28B7215FC51AC00E56970 /* NotePaperBackground.jpg */,
 				23B8BB2515CF8204002746F5 /* StarGazerAppDelegate.h */,
-				239F74C916065AD600A9E75D /* AppController.h */,
-				239F74CA16065AD600A9E75D /* AppController.m */,
 				23B8BB2615CF8204002746F5 /* StarGazerAppDelegate.m */,
 				23B8BB2815CF8204002746F5 /* MainStoryboard_iPhone.storyboard */,
 				2384542116475D46002E7C0E /* GazingTableViewController.h */,
@@ -202,6 +237,13 @@
 				239F747115FF0AD600A9E75D /* WhereToGazeViewController.m */,
 				2384541E16462EF7002E7C0E /* GoGazeTwitter.h */,
 				2384541F16462EF7002E7C0E /* GoGazeTwitter.m */,
+				23F12F9A167869D4005FB18C /* GazeLocations.h */,
+				23F12F9B167869D5005FB18C /* GazeLocations.m */,
+				23F12FA0167D6107005FB18C /* GazeSpotAnnotation.h */,
+				23F12FA1167D6107005FB18C /* GazeSpotAnnotation.m */,
+				23F12FA3167D61B4005FB18C /* GazeSpot.h */,
+				23F12FA4167D61B4005FB18C /* GazeSpot.m */,
+				23934B36168FD6FB00B7E4CD /* GazeLocations.plist */,
 			);
 			path = StarGazer;
 			sourceTree = "<group>";
@@ -209,12 +251,34 @@
 		23B8BB1D15CF8204002746F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23ACF03416A8F0610086EED2 /* ForecastBackground.png */,
+				23C2CBC0168E70260071CA4F /* AddCalendarButtonDisabled.png */,
+				23C2CBC1168E70260071CA4F /* AddCalendarButtonHighlighted.png */,
+				23C2CBC2168E70260071CA4F /* AddCalendarButtonUp.png */,
+				23C2CBBA168E6AC10071CA4F /* AddCalendarButtonDisabled@2x.png */,
+				23C2CBBB168E6AC10071CA4F /* AddCalendarButtonHighlighted@2x.png */,
+				23C2CBBC168E6AC10071CA4F /* AddCalendarButtonUp@2x.png */,
+				23C2CBB7168D0E3A0071CA4F /* ForecastBackground@2x.png */,
+				237B7A4E168AE04C006C13F5 /* clearmeter.png */,
+				237B7A4C168A863E006C13F5 /* clearmeter@2x.png */,
+				237B7A34168A6E7C006C13F5 /* firstquarter@2x.png */,
+				237B7A35168A6E7C006C13F5 /* fullmoon@2x.png */,
+				237B7A36168A6E7D006C13F5 /* newmoon@2x.png */,
+				237B7A37168A6E7D006C13F5 /* thirdquarter@2x.png */,
+				237B7A38168A6E7D006C13F5 /* waningcrescent@2x.png */,
+				237B7A39168A6E7D006C13F5 /* waninggibbous@2x.png */,
+				237B7A3A168A6E7D006C13F5 /* waxingcrescent@2x.png */,
+				237B7A3B168A6E7D006C13F5 /* waxinggibbous@2x.png */,
+				237B7A18168A66EA006C13F5 /* firstquarter.png */,
+				237B7A19168A66EA006C13F5 /* fullmoon.png */,
+				237B7A1B168A66EA006C13F5 /* newmoon.png */,
+				237B7A1D168A66EB006C13F5 /* thirdquarter.png */,
+				237B7A1E168A66EB006C13F5 /* waningcrescent.png */,
+				237B7A20168A66EB006C13F5 /* waninggibbous.png */,
+				237B7A22168A66EB006C13F5 /* waxingcrescent.png */,
+				237B7A24168A66EB006C13F5 /* waxinggibbous.png */,
 				238FDBB41662F944008ACE40 /* facebookbutton@2x.png */,
 				238FDBB21662EFD8008ACE40 /* twitterbutton@2x.png */,
-				238FDBAE1662E505008ACE40 /* addtocalendarbutton@2x.png */,
-				238FDBAF1662E505008ACE40 /* addtocalendarpressed@2x.png */,
-				238FDBA81662DACD008ACE40 /* addtocalendarpressed.png */,
-				238FDBA61662DAC3008ACE40 /* addtocalendarbutton.png */,
 				23B8BB1E15CF8204002746F5 /* StarGazer-Info.plist */,
 				23B8BB1F15CF8204002746F5 /* InfoPlist.strings */,
 				23B8BB2215CF8204002746F5 /* main.m */,
@@ -316,21 +380,37 @@
 				23B8BB2115CF8204002746F5 /* InfoPlist.strings in Resources */,
 				23B8BB2A15CF8204002746F5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				23B8BB2D15CF8204002746F5 /* MainStoryboard_iPad.storyboard in Resources */,
-				23B28B7315FC51AC00E56970 /* NotePaperBackground.jpg in Resources */,
-				239F746615FC696E00A9E75D /* Background.jpg in Resources */,
-				239F746B15FD1B7500A9E75D /* CrescentSky.jpg in Resources */,
-				239F746D15FD973000A9E75D /* separator.jpg in Resources */,
-				239F746F15FEE9F100A9E75D /* CalendarButton.jpg in Resources */,
 				238454121637B6AE002E7C0E /* Default-568h@2x.png in Resources */,
 				238FDBA116618503008ACE40 /* ForecastBackground.png in Resources */,
-				238FDBA31661938E008ACE40 /* Nightsky.png in Resources */,
-				238FDBA51661C5D1008ACE40 /* addtocalendar.png in Resources */,
-				238FDBA71662DAC3008ACE40 /* addtocalendarbutton.png in Resources */,
-				238FDBA91662DACD008ACE40 /* addtocalendarpressed.png in Resources */,
-				238FDBB01662E505008ACE40 /* addtocalendarbutton@2x.png in Resources */,
-				238FDBB11662E505008ACE40 /* addtocalendarpressed@2x.png in Resources */,
 				238FDBB31662EFD8008ACE40 /* twitterbutton@2x.png in Resources */,
 				238FDBB51662F944008ACE40 /* facebookbutton@2x.png in Resources */,
+				237B7A26168A66EB006C13F5 /* firstquarter.png in Resources */,
+				237B7A27168A66EB006C13F5 /* fullmoon.png in Resources */,
+				237B7A29168A66EB006C13F5 /* newmoon.png in Resources */,
+				237B7A2B168A66EB006C13F5 /* thirdquarter.png in Resources */,
+				237B7A2C168A66EB006C13F5 /* waningcrescent.png in Resources */,
+				237B7A2E168A66EB006C13F5 /* waninggibbous.png in Resources */,
+				237B7A30168A66EB006C13F5 /* waxingcrescent.png in Resources */,
+				237B7A32168A66EB006C13F5 /* waxinggibbous.png in Resources */,
+				237B7A3C168A6E7D006C13F5 /* firstquarter@2x.png in Resources */,
+				237B7A3D168A6E7D006C13F5 /* fullmoon@2x.png in Resources */,
+				237B7A3E168A6E7D006C13F5 /* newmoon@2x.png in Resources */,
+				237B7A3F168A6E7D006C13F5 /* thirdquarter@2x.png in Resources */,
+				237B7A40168A6E7D006C13F5 /* waningcrescent@2x.png in Resources */,
+				237B7A41168A6E7D006C13F5 /* waninggibbous@2x.png in Resources */,
+				237B7A42168A6E7D006C13F5 /* waxingcrescent@2x.png in Resources */,
+				237B7A43168A6E7D006C13F5 /* waxinggibbous@2x.png in Resources */,
+				237B7A4D168A863E006C13F5 /* clearmeter@2x.png in Resources */,
+				237B7A4F168AE04C006C13F5 /* clearmeter.png in Resources */,
+				23C2CBB8168D0E3A0071CA4F /* ForecastBackground@2x.png in Resources */,
+				23C2CBBD168E6AC10071CA4F /* AddCalendarButtonDisabled@2x.png in Resources */,
+				23C2CBBE168E6AC10071CA4F /* AddCalendarButtonHighlighted@2x.png in Resources */,
+				23C2CBBF168E6AC10071CA4F /* AddCalendarButtonUp@2x.png in Resources */,
+				23C2CBC3168E70260071CA4F /* AddCalendarButtonDisabled.png in Resources */,
+				23C2CBC4168E70260071CA4F /* AddCalendarButtonHighlighted.png in Resources */,
+				23C2CBC5168E70260071CA4F /* AddCalendarButtonUp.png in Resources */,
+				23934B37168FD6FB00B7E4CD /* GazeLocations.plist in Resources */,
+				23ACF03516A8F0610086EED2 /* ForecastBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +454,9 @@
 				239F747215FF0AD600A9E75D /* WhereToGazeViewController.m in Sources */,
 				2384542016462EF7002E7C0E /* GoGazeTwitter.m in Sources */,
 				2384542316475D46002E7C0E /* GazingTableViewController.m in Sources */,
+				23F12F9C167869D5005FB18C /* GazeLocations.m in Sources */,
+				23F12FA2167D6107005FB18C /* GazeSpotAnnotation.m in Sources */,
+				23F12FA5167D61B4005FB18C /* GazeSpot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +465,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B8BB4515CF8205002746F5 /* StarGazerTests.m in Sources */,
-				239F74CB16065AD600A9E75D /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +514,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2300704A166AE59C0096505B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Archana Sankaranarayanan";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Archana Sankaranarayanan";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Ad Hoc";
+		};
+		2300704B166AE59C0096505B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StarGazer/StarGazer.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazer/StarGazer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		2300704C166AE59C0096505B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarGazer.app/StarGazer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
+				INFOPLIST_FILE = "StarGazerTests/StarGazerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad Hoc";
+		};
 		23B8BB4615CF8205002746F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,7 +604,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Archana Sankaranarayanan";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Archana Sankaranarayanan";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -473,6 +614,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -482,6 +625,7 @@
 		23B8BB4915CF8205002746F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StarGazer/StarGazer.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
 				INFOPLIST_FILE = "StarGazer/StarGazer-Info.plist";
@@ -493,10 +637,14 @@
 		23B8BB4A15CF8205002746F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StarGazer/StarGazer.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarGazer/StarGazer-Prefix.pch";
 				INFOPLIST_FILE = "StarGazer/StarGazer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -542,6 +690,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23B8BB4615CF8205002746F5 /* Debug */,
+				2300704A166AE59C0096505B /* Ad Hoc */,
 				23B8BB4715CF8205002746F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -551,6 +700,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23B8BB4915CF8205002746F5 /* Debug */,
+				2300704B166AE59C0096505B /* Ad Hoc */,
 				23B8BB4A15CF8205002746F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -560,6 +710,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23B8BB4C15CF8205002746F5 /* Debug */,
+				2300704C166AE59C0096505B /* Ad Hoc */,
 				23B8BB4D15CF8205002746F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

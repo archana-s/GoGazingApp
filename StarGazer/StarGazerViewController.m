@@ -17,9 +17,7 @@
 @property NSString *longitude;
 @property CLLocationManager *locationManager;
 @property CLGeocoder *geoCoder;
-
 @end
-
 
 @implementation StarGazerViewController
 @synthesize lunarPhase = _lunarPhase;
@@ -30,6 +28,7 @@
 @synthesize cityAndState = _cityAndState;
 @synthesize twitterButton = _twitterButton;
 @synthesize facebookButton = _facebookButton;
+@synthesize moonPhaseImage = _moonPhaseImage;
 
 @synthesize infoGetter = _infoGetter;
 @synthesize timer = _timer;
@@ -46,8 +45,77 @@
 -(void) updateLunarPhase:(NSString *) value
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        _lunarPhase.text = value;
+        //_lunarPhase.text = value;
     });
+    [self setImageForMoonPhase:value];
+}
+
+-(void) setImageForMoonPhase:(NSString*) value
+{
+    UIImage *fullmoon = [UIImage imageNamed:@"fullmoon.png"];
+    UIImage *newmoon = [UIImage imageNamed:@"newmoon.png"];
+    UIImage *waxinggibbous = [UIImage imageNamed:@"waxinggibbous.png"];
+    UIImage *waninggibbous = [UIImage imageNamed:@"waninggibbous.png"];
+    UIImage *firstquarter = [UIImage imageNamed:@"firstquarter.png"];
+    UIImage *thirdquarter = [UIImage imageNamed:@"thirdquarter.png"];
+    UIImage *waxingcrescent = [UIImage imageNamed:@"waxingcrescent.png"];
+    UIImage *waningcrescent = [UIImage imageNamed:@"waningcrescent.png"];
+    
+    if(!_moonPhaseImage)
+    {
+        _moonPhaseImage = [[UIImageView alloc] init];
+    }
+    
+    if(value == @"Full Moon" || value == @"~ Full Moon")
+    {
+        _moonPhaseImage.image = fullmoon;
+        _lunarPhase.text = @"Full Moon";
+    }
+    else if([value rangeOfString:@"Waxing Gibbous"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = waxinggibbous;
+        _lunarPhase.text = @"Growing Moon";
+    }
+    else if([value rangeOfString:@"Waning Gibbous"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = waninggibbous;
+        _lunarPhase.text = @"Fading Moon";
+    }
+    else if([value isEqualToString:@"~ Waxing Crescent"])
+    {
+        _moonPhaseImage.image = waxingcrescent;
+        _lunarPhase.text = @"Growing Crescent";
+    }
+    else if([value rangeOfString:@"Waxing Crescent"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = waxingcrescent;
+        _lunarPhase.text = @"Growing Moon";
+    }
+    else if([value isEqualToString:@"Waning Crescent"] || [value isEqualToString:@"~ New Moon"])
+    {
+        _moonPhaseImage.image = waningcrescent;
+        _lunarPhase.text = @"Fading Crescent";
+    }
+    else if([value rangeOfString:@"Waning Crescent"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = waningcrescent;
+        _lunarPhase.text = @"Fading Moon";
+    }
+    else if([value rangeOfString:@"First Quarter"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = firstquarter;
+        _lunarPhase.text = @"Growing Moon";
+    }
+    else if([value rangeOfString:@"Third Quarter"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = thirdquarter;
+        _lunarPhase.text = @"Fading Moon";
+    }
+    else if([value rangeOfString:@"New Moon"].location != NSNotFound)
+    {
+        _moonPhaseImage.image = newmoon;
+        _lunarPhase.text = @"New Moon";
+    }
 }
 
 -(void) updateStarGazingCondition:(NSString *)starGazeCondition
@@ -66,17 +134,25 @@
 
 -(void) getCityAndState
 {
-    _geoCoder = [[CLGeocoder alloc] init];
+    //_geoCoder = [[CLGeocoder alloc] init];
     [self.geoCoder reverseGeocodeLocation: _locationManager.location completionHandler:
      
      ^(NSArray *placemarks, NSError *error) {
          //Get nearby address
          CLPlacemark *placemark = [placemarks objectAtIndex:0];
 
-         NSString *locatedAt = [[NSString alloc] initWithFormat:@"%@, %@", [placemark.addressDictionary objectForKey:@"City"], [placemark.addressDictionary objectForKey:@"State"]];
+        // NSString *locatedAt = [[NSString alloc] initWithFormat:@"%@, %@", [placemark.addressDictionary objectForKey:@"City"], [placemark.addressDictionary objectForKey:@"State"]];
+         
+         NSString *locatedAt = [[NSString alloc] initWithFormat:@"%@ %@", [placemark.addressDictionary objectForKey:@"City"], @"Tonight"];
+         
          _cityAndState.text = locatedAt;
-         //NSLog(locatedAt);
+         NSLog(locatedAt);
      }];
+}
+
+-(void) initGeoCoder
+{
+     _geoCoder = [[CLGeocoder alloc] init];
 }
 
 - (void)viewDidLoad
@@ -86,6 +162,15 @@
     [self setObservers];
     [self setButtonsStyle];
     [self loadMeEverytime];
+   // [self setBackgroundImage];
+}
+
+-(void) setBackgroundImage
+{
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background.png"]];
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
 }
 
 -(void) setObservers
@@ -98,26 +183,28 @@
 
 -(void) loadMeEverytime
 {
+    [self initGeoCoder];
     [self getLocation];
-    [self getCityAndState];
 }
 
 -(void) setButtonsStyle
 {
-    UIImage *btn = [UIImage imageNamed:@"addtocalendarbutton.png"];
-    UIImage *btnh = [UIImage imageNamed:@"addtocalendarpressed.png"];
-    UIImage *twitterBtn = [UIImage imageNamed:@"twitterbutton.png"];
-    UIImage *facebookBtn = [UIImage imageNamed:@"facebookbutton.png"];
+    UIImage *btn = [UIImage imageNamed:@"AddCalendarButtonUp.png"];
+    UIImage *btnd = [UIImage imageNamed:@"AddCalendarButtonDisabled.png"];
+    UIImage *btnh = [UIImage imageNamed:@"AddCalendarButtonHighlighted.png"];
     
     [_calendarEvent setBackgroundImage:btn forState:UIControlStateNormal];
     [_calendarEvent setBackgroundImage:btnh forState:UIControlStateHighlighted];
-    [_calendarEvent setBackgroundImage:btnh forState:UIControlStateDisabled];
-    [_twitterButton setBackgroundImage:twitterBtn forState:UIControlStateNormal];
-    [_facebookButton setBackgroundImage:facebookBtn forState:UIControlStateNormal];
+    [_calendarEvent setBackgroundImage:btnd forState:UIControlStateDisabled];
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [_locationManager stopUpdatingLocation];
 }
 
 -(void) getLocation
@@ -125,7 +212,7 @@
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.distanceFilter = kCLDistanceFilterNone;
-    _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
     [_locationManager startUpdatingLocation];
 }
 
@@ -134,7 +221,8 @@
     _infoGetter = [[StarGazer alloc] init];
     _infoGetter.delegate = self;
     
-    _dateInfo.text = [_infoGetter getDateInfo];
+    //_dateInfo.text = [_infoGetter getDateInfo];
+    _dateInfo.text = @"Tonight";
     
     // Set latitude and longitude 
     _infoGetter.latitude = _latitude;
@@ -142,28 +230,11 @@
     
     [_infoGetter invokeWeatherAPIForCloudCover];
     [_infoGetter analyzeLunarPosition];
-    
-    dispatch_queue_t download_queue = dispatch_queue_create("Download Weather Info", NULL);
-    dispatch_group_t download_group = dispatch_group_create();
-    
-    dispatch_group_async(download_group, download_queue, ^{
-        [_infoGetter invokeWeatherAPIForCloudCover];
-    });
-    
-    dispatch_group_async(download_group, download_queue, ^{
-        [_infoGetter analyzeLunarPosition];
-    });
-    
-    dispatch_group_notify(download_group, download_queue, ^{
-        [_infoGetter analyzeStarGazing];
-    });
 }
 
 -(void) UIinitialization
 {
-    self.tabBarItem.title = @"Home";
-    self.addedToCalendar.text = @"Added to Calendar";
-    self.addedToCalendar.hidden = true;
+    
 }
 
 - (void)viewDidUnload
@@ -176,7 +247,6 @@
     [self setCalendarEvent:nil];
     [self setCalendarView:nil];
     [self setSpinner:nil];
-    [self setAddedToCalendar:nil];
     [self setTwitterButton:nil];
     [self setFacebookButton:nil];
     [super viewDidUnload];
@@ -209,7 +279,7 @@
                  {
                      event.title     = @"GoGazing Tonight!";
                      event.startDate = [self getStartTimeForEvent];
-                     event.endDate=[event.startDate dateByAddingTimeInterval:2400];
+                     event.endDate=[event.startDate dateByAddingTimeInterval:7200];
                      event.notes = @"Escape the city lights, find a dark spot and watch the beautiful stars. Check out light pollution maps for your area here: www.darkskyfinder.com";
                      
                      NSTimeInterval interval = -1*60*60;
@@ -237,19 +307,39 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [_spinner stopAnimating];
             self.calendarEvent.enabled = false;
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"GoGazing added to today's calendar" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
             dispatch_release(addingToCalendarQueue);
         });
     });
 }
 
+// If the current time is before 8pm, pick 8pm-10pm as the time to gaze
+// If current time is after 8pm, pick one hour from now and block calendar for 2 hours from then.
 -(NSDate*) getStartTimeForEvent
 {
     NSCalendar* myCalendar = [NSCalendar currentCalendar];
     NSDateComponents* components = [myCalendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
                                                  fromDate:[NSDate date]];
-    [components setHour: 20];
-    [components setMinute: 0];
-    [components setSecond: 0];
+    
+    // Get the current hour and minute component
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *componentsNow = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:[NSDate date]];
+    NSInteger hour = [componentsNow hour];
+    NSInteger minute = [components minute];
+    
+    if (hour > 20 && minute > 0)
+    {
+        [components setHour: hour];
+        [components setMinute:minute+60];
+        [components setSecond:0];
+    }
+    else
+    {
+        [components setHour: 20];
+        [components setMinute: 0];
+        [components setSecond: 0];
+    }
     return [myCalendar dateFromComponents:components];
 }
 
@@ -274,6 +364,7 @@
     
     // We have the location, lets invoke the weather api to get weather conditions
     [self invokeStarGazingApp];
+    [self getCityAndState];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
