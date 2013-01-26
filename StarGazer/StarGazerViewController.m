@@ -66,12 +66,12 @@
         _moonPhaseImage = [[UIImageView alloc] init];
     }
     
-    if(value == @"Full Moon" || value == @"~ Full Moon")
+    if(value == @"Full Moon")
     {
         _moonPhaseImage.image = fullmoon;
         _lunarPhase.text = @"Full Moon";
     }
-    else if([value rangeOfString:@"Waxing Gibbous"].location != NSNotFound)
+    else if(value == @"Waxing Gibbous" || value == @"~ Full Moon")
     {
         _moonPhaseImage.image = waxinggibbous;
         _lunarPhase.text = @"Growing Moon";
@@ -86,7 +86,7 @@
         _moonPhaseImage.image = waxingcrescent;
         _lunarPhase.text = @"Growing Crescent";
     }
-    else if([value rangeOfString:@"Waxing Crescent"].location != NSNotFound)
+    else if([value rangeOfString:@"Waxing Crescent"].location != NSNotFound || value == @"~ First Quarter")
     {
         _moonPhaseImage.image = waxingcrescent;
         _lunarPhase.text = @"Growing Moon";
@@ -101,7 +101,7 @@
         _moonPhaseImage.image = waningcrescent;
         _lunarPhase.text = @"Fading Moon";
     }
-    else if([value rangeOfString:@"First Quarter"].location != NSNotFound)
+    else if(value == @"First Quarter" || value == @"~ Waxing Gibbous")
     {
         _moonPhaseImage.image = firstquarter;
         _lunarPhase.text = @"Growing Moon";

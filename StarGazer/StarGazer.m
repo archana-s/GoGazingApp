@@ -13,7 +13,7 @@
 
 @interface StarGazer()
 {
-@private NSArray *fourDaysFromToday;
+@private NSArray *fiveDays;
 @private int lunarPosition;
 @private int cloudCoverValue;
 @private NSString *gazeVerdict;
@@ -46,7 +46,9 @@
     NSDate *today = [NSDate date];
     NSDate *tomorrow = [NSDate dateWithTimeInterval:(24*60*60) sinceDate:[NSDate date]];
     NSDate *dayAfter = [NSDate dateWithTimeInterval:(48*60*60) sinceDate:[NSDate date]];
-    fourDaysFromToday = [[NSArray alloc] initWithObjects:today, tomorrow, dayAfter, nil];
+    NSDate *dayAfterTomorrow = [NSDate dateWithTimeInterval:(72*60*60) sinceDate:[NSDate date]];
+    NSDate *threeDaysFromNow = [NSDate dateWithTimeInterval:(96*60*60) sinceDate:[NSDate date]];
+    fiveDays = [[NSArray alloc] initWithObjects:today, tomorrow, dayAfter, dayAfterTomorrow, threeDaysFromNow, nil];
 }
 
 -(NSString*) getDateInfo
@@ -73,13 +75,13 @@
     {
         condition = [[NSString alloc] initWithString:@"Dark night but a little cloudy. Not too bad to gaze."];
     }
+    else if (cloudCoverValue > 30)
+    {
+        condition = [[NSString alloc] initWithString:@"Too cloudy to gaze."];
+    }
     else if (lunarPosition >=3.75 && lunarPosition <= 26.25)
     {
         condition = [[NSString alloc] initWithString:@"Moon light is too bright to star gaze."];
-    }
-    else if(cloudCoverValue >= 30)
-    {
-        condition = [[NSString alloc] initWithString:@"Too cloudy to gaze."];
     }
     
     _starGazeResult = [[NSMutableString alloc] initWithString:condition];
@@ -195,7 +197,7 @@
     NSArray *arr = [strDate componentsSeparatedByString:@" "];
     NSString *str;
     str = [arr objectAtIndex:0];
-    NSLog(@"strdate: %@",str); // strdate: 2011-02-28
+    NSLog(@"strdate: %@",str); 
     
     NSArray *arr_my = [str componentsSeparatedByString:@"-"];
     
@@ -318,10 +320,10 @@
     [_urlToNDFD appendString:@"&product=time-series&Unit=e&sky=sky&Submit=Submit&begin="];
     
     // Add the begin date and end date 
-    [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fourDaysFromToday objectAtIndex:0]]];
+    [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fiveDays objectAtIndex:0]]];
     // append the time from which you want the weather data
     [_urlToNDFD appendString:@"T20%3A00%3A00&end="];
-    [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fourDaysFromToday objectAtIndex:1]]];
+    [_urlToNDFD appendString:[ndfdDateFormat stringFromDate:[fiveDays objectAtIndex:1]]];
     [_urlToNDFD appendString:@"T01%3A00%3A00"];
     
     NSLog(@"URL for regular cloud cover:");

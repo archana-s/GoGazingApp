@@ -64,6 +64,7 @@
 		23F12F9C167869D5005FB18C /* GazeLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12F9B167869D5005FB18C /* GazeLocations.m */; };
 		23F12FA2167D6107005FB18C /* GazeSpotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12FA1167D6107005FB18C /* GazeSpotAnnotation.m */; };
 		23F12FA5167D61B4005FB18C /* GazeSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12FA4167D61B4005FB18C /* GazeSpot.m */; };
+		23F5B27B16B0FAA70036E5F4 /* GazeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5B27A16B0FAA70036E5F4 /* GazeCondition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,8 @@
 		23F12FA1167D6107005FB18C /* GazeSpotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeSpotAnnotation.m; sourceTree = "<group>"; };
 		23F12FA3167D61B4005FB18C /* GazeSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeSpot.h; sourceTree = "<group>"; };
 		23F12FA4167D61B4005FB18C /* GazeSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeSpot.m; sourceTree = "<group>"; };
+		23F5B27916B0FAA70036E5F4 /* GazeCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeCondition.h; sourceTree = "<group>"; };
+		23F5B27A16B0FAA70036E5F4 /* GazeCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GazeCondition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 				23F12FA3167D61B4005FB18C /* GazeSpot.h */,
 				23F12FA4167D61B4005FB18C /* GazeSpot.m */,
 				23934B36168FD6FB00B7E4CD /* GazeLocations.plist */,
+				23F5B27916B0FAA70036E5F4 /* GazeCondition.h */,
+				23F5B27A16B0FAA70036E5F4 /* GazeCondition.m */,
 			);
 			path = StarGazer;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				23F12F9C167869D5005FB18C /* GazeLocations.m in Sources */,
 				23F12FA2167D6107005FB18C /* GazeSpotAnnotation.m in Sources */,
 				23F12FA5167D61B4005FB18C /* GazeSpot.m in Sources */,
+				23F5B27B16B0FAA70036E5F4 /* GazeCondition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
