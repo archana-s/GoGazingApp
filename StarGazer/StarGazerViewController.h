@@ -9,15 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "StarGazer.h"
 #import <CoreLocation/CoreLocation.h>
+#import "GazeLocations.h"
+#import "GazeSpot.h"
 
-@interface StarGazerViewController : UIViewController <StarGazerDelegate, CLLocationManagerDelegate>
+@interface StarGazerViewController : UIViewController <StarGazerDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate, GazeLocationsDelegate>
+@property (weak, nonatomic) IBOutlet UIView *conditionsView;
+@property (weak, nonatomic) IBOutlet UIView *darkSpotsView;
 @property (weak, nonatomic) IBOutlet UILabel *lunarPhase;
 @property (weak, nonatomic) IBOutlet UILabel *gazometer;
+@property (weak, nonatomic) IBOutlet UITableView *darkSpotsTable;
 @property (weak, nonatomic) IBOutlet UILabel *cloudCover;
 @property (weak, nonatomic) IBOutlet UIButton *calendarEvent;
 @property (weak, nonatomic) IBOutlet UILabel *gazingVerdict;
 @property (weak, nonatomic) IBOutlet UIButton *facebookButton;
 @property (weak, nonatomic) IBOutlet UILabel *dateInfo;
+@property (weak, nonatomic) IBOutlet UIView *cityListView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIView *calendarView;
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;

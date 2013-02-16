@@ -143,102 +143,20 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="16w-Tw-b4G">
+                            <view contentMode="center" id="16w-Tw-b4G">
                                 <rect key="frame" x="0.0" y="37" width="320" height="374"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="ForecastBackground.png" id="QMS-N7-j50">
-                                        <rect key="frame" x="3" y="0.0" width="314" height="368"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="0.95986128826530615" green="0.95986128826530615" blue="0.95986128826530615" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="PIk-pu-2B3">
-                                        <rect key="frame" x="28" y="254" width="259" height="29"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="highlightedColor" red="0.76004161005434789" green="0.76004161005434789" blue="0.76004161005434789" alpha="1" colorSpace="calibratedRGB"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="gL2-vT-8Zh">
-                                        <rect key="frame" x="43" y="43" width="73" height="41"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="t7M-6G-gFi">
-                                        <rect key="frame" x="43" y="146" width="128" height="29"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
-                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="EGS-cw-W1G">
-                                        <rect key="frame" x="43" y="183" width="216" height="105"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
-                                        <color key="textColor" red="0.49834582270408168" green="0.49834582270408168" blue="0.49834582270408168" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="pXI-Le-URH">
-                                        <rect key="frame" x="43" y="82" width="63" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
-                                        <color key="textColor" red="0.50484489293377122" green="0.49273362933990211" blue="0.50558035714285721" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="7r2-dm-jSU">
                                         <rect key="frame" x="8" y="23" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tSe-nd-HVd">
-                                        <rect key="frame" x="96" y="311" width="46" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pgg-PK-mcx">
-                                        <rect key="frame" x="53" y="311" width="48" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nku-LP-Kad">
-                                        <rect key="frame" x="8" y="308" width="304" height="19"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
-                                        <color key="textColor" red="0.4508928571428571" green="0.4508928571428571" blue="0.4508928571428571" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" id="3vI-pu-LN4">
-                                        <rect key="frame" x="46" y="105" width="40" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="l2t-Ji-Y3G">
-                                        <rect key="frame" x="17" y="0.0" width="89" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
-                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" id="bvR-Yv-9zr">
-                                        <rect key="frame" x="214" y="36" width="65" height="39"/>
+                                        <rect key="frame" x="275" y="17" width="45" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="E0s-I5-5U1">
-                                                <rect key="frame" x="20" y="0.0" width="45" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
@@ -256,25 +174,118 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <view contentMode="center" id="65N-Zd-pcG">
+                                        <rect key="frame" x="4" y="0.0" width="312" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nku-LP-Kad">
+                                                <rect key="frame" x="39" y="12" width="205" height="19"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="gL2-vT-8Zh">
+                                                <rect key="frame" x="39" y="37.5" width="72" height="40"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" id="3vI-pu-LN4">
+                                                <rect key="frame" x="97" y="35" width="40" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="pXI-Le-URH">
+                                                <rect key="frame" x="39" y="74" width="63" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="t7M-6G-gFi">
+                                                <rect key="frame" x="98" y="70" width="128" height="29"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="EGS-cw-W1G">
+                                                <rect key="frame" x="39" y="91" width="216" height="30"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="location.png" id="Lrk-zx-hHy">
+                                                <rect key="frame" x="12" y="12" width="19" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="fullscore.png" id="vVo-LD-yay">
+                                                <rect key="frame" x="260" y="12" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="center" id="wsf-0b-guQ">
+                                        <rect key="frame" x="4" y="139" width="312" height="205"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dark Spots Near You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dPS-0K-3jN">
+                                                <rect key="frame" x="40" y="15" width="285" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" sectionHeaderHeight="22" sectionFooterHeight="22" id="dBe-AS-XjM">
+                                                <rect key="frame" x="7" y="43" width="293" height="162"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="separatorColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
+                                                <prototypes>
+                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="Gazing Locs" rowHeight="30" id="5sl-0F-0tC">
+                                                        <rect key="frame" x="0.0" y="22" width="293" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="293" height="29"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="2" id="NBA-6i-ToQ"/>
+                                                    <outlet property="delegate" destination="2" id="efV-1d-fRO"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="spots.png" id="Rze-ta-XvI">
+                                        <rect key="frame" x="14" y="158" width="19" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96466438137755106" green="0.96466438137755106" blue="0.96466438137755106" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="dkz-Am-dS3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gaze Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="TyI-Fs-dOX">
-                                        <rect key="frame" x="0.0" y="9" width="320" height="24"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gaze Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="TyI-Fs-dOX">
+                                        <rect key="frame" x="20" y="10" width="307" height="24"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.96129623724489799" green="0.96129623724489799" blue="0.96129623724489799" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gaze Conditions" id="Bn6-a8-BtB"/>
                     <navigationItem key="navigationItem" id="ayH-9x-eYp"/>
@@ -283,23 +294,37 @@
                         <outlet property="calendarView" destination="bvR-Yv-9zr" id="uHh-aA-D2D"/>
                         <outlet property="cityAndState" destination="Nku-LP-Kad" id="8Mn-50-BJg"/>
                         <outlet property="cloudCover" destination="gL2-vT-8Zh" id="a4B-Xy-msx"/>
-                        <outlet property="dateInfo" destination="l2t-Ji-Y3G" id="rsJ-j2-L6y"/>
-                        <outlet property="facebookButton" destination="Pgg-PK-mcx" id="4Bk-mV-FhD"/>
-                        <outlet property="gazingVerdict" destination="PIk-pu-2B3" id="2Db-xj-gTk"/>
+                        <outlet property="conditionsView" destination="65N-Zd-pcG" id="h7q-Lp-0nq"/>
+                        <outlet property="darkSpotsTable" destination="dBe-AS-XjM" id="zDP-DK-69w"/>
+                        <outlet property="darkSpotsView" destination="wsf-0b-guQ" id="5Wp-c1-BFN"/>
                         <outlet property="gazometer" destination="EGS-cw-W1G" id="fTI-GE-OBr"/>
                         <outlet property="lunarPhase" destination="t7M-6G-gFi" id="505-CB-1zR"/>
                         <outlet property="moonPhaseImage" destination="3vI-pu-LN4" id="fJT-rW-WG7"/>
                         <outlet property="spinner" destination="7r2-dm-jSU" id="nkt-LE-Lcy"/>
-                        <outlet property="twitterButton" destination="tSe-nd-HVd" id="Zow-0t-sbE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1432" y="470"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jha-cj-V5I">
+            <objects>
+                <viewController id="iU9-go-S7W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GMT-6t-Lyo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVD-aC-7Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
-        <image name="ForecastBackground.png" width="290" height="320"/>
+        <image name="fullscore.png" width="37" height="37"/>
+        <image name="location.png" width="13" height="20"/>
+        <image name="spots.png" width="13" height="20"/>
     </resources>
     <classes>
         <class className="GazingTableViewController" superclassName="UITableViewController">
@@ -312,7 +337,11 @@
                 <relationship kind="outlet" name="calendarEvent" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="calendarView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="cityAndState" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cityListView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="cloudCover" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="conditionsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="darkSpotsTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="darkSpotsView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="dateInfo" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="gazingVerdict" candidateClass="UILabel"/>

@@ -227,11 +227,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "160"
-         endingLineNumber = "160"
+         startingLineNumber = "167"
+         endingLineNumber = "167"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -383,11 +383,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "123"
-         endingLineNumber = "123"
+         startingLineNumber = "130"
+         endingLineNumber = "130"
          landmarkName = "-updateStarGazingCondition:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -396,11 +396,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "123"
-         endingLineNumber = "123"
+         startingLineNumber = "130"
+         endingLineNumber = "130"
          landmarkName = "-updateStarGazingCondition:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -409,11 +409,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378027999.667894"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "47"
-         endingLineNumber = "47"
+         startingLineNumber = "54"
+         endingLineNumber = "54"
          landmarkName = "-updateLunarPhase:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -422,11 +422,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378027999.667894"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "39"
-         endingLineNumber = "39"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "-updateCloudCoverValue:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -500,11 +500,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "138"
-         endingLineNumber = "138"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-getCityAndState"
          landmarkType = "5">
       </FileBreakpoint>
@@ -513,11 +513,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378168626.872537"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-setImageForMoonPhase:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -526,11 +526,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435383.369957"
+         timestampString = "382177947.695379"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
          landmarkName = "-setImageForMoonPhase:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -539,11 +539,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382229941.002073"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "193"
-         endingLineNumber = "193"
+         startingLineNumber = "209"
+         endingLineNumber = "209"
          landmarkName = "-setButtonsStyle"
          landmarkType = "5">
       </FileBreakpoint>
@@ -552,11 +552,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "378435815.297211"
+         timestampString = "382229941.002073"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "192"
-         endingLineNumber = "192"
+         startingLineNumber = "208"
+         endingLineNumber = "208"
          landmarkName = "-setButtonsStyle"
          landmarkType = "5">
       </FileBreakpoint>
@@ -565,11 +565,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StarGazer/StarGazerViewController.m"
-         timestampString = "379843485.159196"
+         timestampString = "382229941.002073"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "294"
-         endingLineNumber = "294"
+         startingLineNumber = "329"
+         endingLineNumber = "329"
          landmarkName = "-addGazingToCalendar"
          landmarkType = "5">
       </FileBreakpoint>
@@ -857,6 +857,71 @@
          startingLineNumber = "94"
          endingLineNumber = "94"
          landmarkName = "-parser:foundCharacters:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StarGazer/StarGazerViewController.m"
+         timestampString = "382229941.002073"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "424"
+         endingLineNumber = "424"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StarGazer/StarGazerViewController.m"
+         timestampString = "382229941.002073"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "419"
+         endingLineNumber = "419"
+         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StarGazer/StarGazerViewController.m"
+         timestampString = "382229941.002073"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "418"
+         endingLineNumber = "418"
+         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StarGazer/StarGazerViewController.m"
+         timestampString = "382229941.002073"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "263"
+         endingLineNumber = "263"
+         landmarkName = "-updateGazeLocations:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StarGazer/StarGazerViewController.m"
+         timestampString = "382259348.388533"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "443"
+         endingLineNumber = "443"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

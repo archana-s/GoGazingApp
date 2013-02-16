@@ -17,6 +17,8 @@
 @property NSString *longitude;
 @property CLLocationManager *locationManager;
 @property CLGeocoder *geoCoder;
+@property GazeLocations *gazeLocs;
+@property NSArray *darkSpots;
 @end
 
 @implementation StarGazerViewController
@@ -29,6 +31,11 @@
 @synthesize twitterButton = _twitterButton;
 @synthesize facebookButton = _facebookButton;
 @synthesize moonPhaseImage = _moonPhaseImage;
+@synthesize gazeLocs = _gazeLocs;
+@synthesize darkSpots = _darkSpots;
+@synthesize darkSpotsTable = _darkSpotsTable;
+@synthesize conditionsView = _conditionsView;
+@synthesize darkSpotsView = _darkSpotsView;
 
 @synthesize infoGetter = _infoGetter;
 @synthesize timer = _timer;
@@ -162,15 +169,24 @@
     [self setObservers];
     [self setButtonsStyle];
     [self loadMeEverytime];
-   // [self setBackgroundImage];
+    [self getDarkLocations];
+    [self setBackgroundImage];
 }
 
 -(void) setBackgroundImage
 {
-    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background.png"]];
     
-    [self.view addSubview:backgroundImage];
-    [self.view sendSubviewToBack:backgroundImage];
+    UIImageView *backImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topBack.png"]];
+    backImage.contentMode = UIViewContentModeCenter;
+    
+    [self.conditionsView addSubview:backImage];
+    [self.conditionsView sendSubviewToBack:backImage];
+    
+    UIImageView *bottombackImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bottomBack.png"]];
+   // bottombackImage.center = self.conditionsView.center;
+    bottombackImage.contentMode = UIViewContentModeCenter;
+    [self.darkSpotsView addSubview:bottombackImage];
+    [self.darkSpotsView sendSubviewToBack:bottombackImage]; 
 }
 
 -(void) setObservers
@@ -232,6 +248,22 @@
     [_infoGetter analyzeLunarPosition];
 }
 
+// Dark Spots Section
+
+-(void) getDarkLocations
+{
+    _gazeLocs = [[GazeLocations alloc] init];
+    self.gazeLocs.delegate = self;
+    [self.gazeLocs getLocations];
+    [self.darkSpotsTable reloadData];
+}
+
+-(void) updateGazeLocations:(NSArray *)locations
+{
+    self.darkSpots = [[NSArray alloc] initWithArray:locations];
+    [self.darkSpotsTable reloadData];
+}
+
 -(void) UIinitialization
 {
     
@@ -249,6 +281,9 @@
     [self setSpinner:nil];
     [self setTwitterButton:nil];
     [self setFacebookButton:nil];
+    [self setDarkSpotsTable:nil];
+    [self setConditionsView:nil];
+    [self setDarkSpotsView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -374,6 +409,79 @@
                                initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
 }
+
+
+#pragma TableView Datasource delegate methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return _darkSpots.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Gazing Locs";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.numberOfLines = 1;
+    cell.textLabel.textColor = [UIColor grayColor];
+
+    // Get gaze location
+    GazeSpot *gh = (GazeSpot*)[_darkSpots objectAtIndex:indexPath.row];
+    
+    // Configure the cell...
+    if(gh.title.length > 25)
+    {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@...",[gh.title substringToIndex:27]];
+    }
+    else
+    {
+        cell.textLabel.text = gh.title;
+    }
+    
+    if (gh.cloudCoverValue > 12)
+    {
+        NSLog(@"Cloudy Now");
+        UILabel *cloudPercent = [[UILabel alloc] initWithFrame:CGRectMake(263, 2, 25, 25)];
+        cloudPercent.text = [NSString stringWithFormat:@"%d%%", gh.cloudCoverValue];
+        cloudPercent.font = [UIFont systemFontOfSize:10];
+        cloudPercent.textColor = [UIColor grayColor];
+        
+        UIButton *gotoMaps = [[UIButton alloc] initWithFrame:CGRectMake(275, 2, 13, 13)];
+
+        [cell addSubview:[self getViewForCloudyView]];
+        [cell addSubview:cloudPercent];
+    }
+    
+    return cell;
+}
+
+- (UIView*) getViewForCloudyView
+{
+    UIView *cloudyView = [[UIView alloc] initWithFrame:CGRectMake(250, 5, 13, 45)];
+    UIImageView *clouds = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"clouds.png"]];
+    clouds.contentMode = UIViewContentModeCenter;
+    [cloudyView addSubview:clouds];
+    [cloudyView sendSubviewToBack:clouds];
+    return cloudyView;
+}
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
+}
+
 
 
 @end
